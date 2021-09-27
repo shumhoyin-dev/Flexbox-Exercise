@@ -213,7 +213,6 @@ a {
 }
 
 .aside h2 {
-  padding-top: 16px;
   background: #3f5d45;
   color: #eaf0ed;
   text-align: center;
@@ -321,28 +320,31 @@ a {
   font-size: 20px;
 }
 
-.page {
+.pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.pagination .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 20px;
 }
 
-.page ul {
-  border: 1px solid red;
-}
-
-.page a {
-  width: 60px;
-  height: 60px;
-  padding: 20px;
+.pagination .pagination-list a {
+  display: block;
+  padding: 16px 24px;
   text-align: center;
+  border: 1px solid #eaf0ed;
 }
 
-.page a:hover {
+.pagination .pagination-list a:hover {
   background-color: #3f5d45;
   color: white;
 }
@@ -352,14 +354,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-left: 122px;
+  padding-right: 122px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background: #3f5d45;
   padding-top: 38px;
   padding-bottom: 38px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-subscribe .slogan {
@@ -424,43 +431,32 @@ a {
   margin-left: 10px;
 }
 
-footer {
+.footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 122px;
+  padding-right: 122px;
   background: #eaf0ed;
+}
+
+.footer .footer-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-bottom: 30px;
-  padding-top: 40px;
 }
 
-footer .address {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 300px;
+.footer .footer-top .slogan {
+  width: 60px;
+  height: 220px;
+  display: block;
 }
 
-footer .address .info {
-  margin-top: 120px;
-}
-
-footer .address .social-logo {
-  margin-top: 30px;
-}
-
-footer .address .social-logo img {
-  width: 30px;
-}
-
-footer .slogan {
+.footer .footer-top .address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,17 +467,45 @@ footer .slogan {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer .slogan .content {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
+.footer .footer-top .address img {
+  width: 170px;
+  height: 27px;
 }
 
-footer .slogan .content span {
-  line-height: 0.1em;
+.footer .copyright {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .copyright .social-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .copyright .social-logo img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.footer .copyright h3 {
+  margin-top: 16px;
 }
 
 .credit {

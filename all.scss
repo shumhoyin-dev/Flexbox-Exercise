@@ -195,7 +195,6 @@ a {
     width: 300px;
 
     h2 {
-        padding-top: 16px;
         background: #3f5d45;
         color: #eaf0ed;
         text-align: center;
@@ -298,37 +297,59 @@ a {
     }
 }
 
-.page {
+.pagination {
     display: flex;
     justify-content: flex-end;
-    font-size: 20px;
+    margin-top: 10px;
+    .pagination-list {
+        display: flex;
+        font-size: 20px;
 
-    ul {
-        border: 1px solid red;
-    }
+        a {
+            display: block;
+            padding: 16px 24px;
+            text-align: center;
+            border: 1px solid #eaf0ed;
+        }
 
-    a {
-        width: 60px;
-        height: 60px;
-        padding: 20px;
-        text-align: center;
-    }
-
-    a:hover {
-        background-color: #3f5d45;
-        color: white;
+        a:hover {
+            background-color: #3f5d45;
+            color: white;
+        }
     }
 }
+
+// .page {
+//     display: flex;
+//     justify-content: flex-end;
+//     font-size: 20px;
+
+//     ul {
+//         border: 1px solid red;
+//     }
+
+//     a {
+//         width: 60px;
+//         height: 60px;
+//         padding: 20px;
+//         text-align: center;
+//     }
+
+// }
 
 .footer-subscribe {
     margin-top: 60px;
     display: flex;
-    justify-content: space-around;
+    padding-left: 122px;
+    padding-right: 122px;
+    justify-content: space-between;
     align-items: center;
     background: #3f5d45;
 
     padding-top: 38px;
     padding-bottom: 38px;
+    flex-wrap: wrap;
+
     .slogan {
         width: 280px;
         display: flex;
@@ -336,6 +357,7 @@ a {
         justify-content: space-between;
         align-items: center;
         color: #eaf0ed;
+
         img {
             width: 40px;
             height: 40px;
@@ -381,45 +403,93 @@ a {
     }
 }
 
-footer {
-    background: #eaf0ed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 30px;
+.footer {
     padding-top: 40px;
+    padding-bottom: 30px;
+    padding-left: 122px;
+    padding-right: 122px;
+    background: #eaf0ed;
 
-    .address {
+    .footer-top {
         display: flex;
-        flex-direction: column;
-        width: 300px;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-        .info {
-            margin-top: 120px;
+        .slogan {
+            width: 60px;
+            height: 220px;
+            display: block;
         }
 
-        .social-logo {
-            margin-top: 30px;
+        .address {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             img {
-                width: 30px;
+                width: 170px;
+                height: 27px;
             }
         }
     }
 
-    .slogan {
+    .copyright {
+        margin-top: 30px;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        font-size: 24px;
+        align-items: center;
+        flex-wrap: wrap;
 
-        .content {
-            writing-mode: vertical-lr;
-            span {
-                line-height: 0.1em;
+        .social-logo {
+            display: flex;
+            img {
+                width: 32px;
+                height: 32px;
+                margin-right: 8px;
             }
+        }
+        h3 {
+            margin-top: 16px;
         }
     }
 }
+// background: #eaf0ed;
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: space-around;
+
+// padding-top: 40px;
+
+// .address {
+//     display: flex;
+//     flex-direction: column;
+//     width: 300px;
+
+//     .info {
+//         margin-top: 120px;
+//     }
+
+//     .social-logo {
+//         margin-top: 30px;
+//         img {
+//             width: 30px;
+//         }
+//     }
+// }
+
+// .slogan {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     font-size: 24px;
+
+//     .content {
+//         writing-mode: vertical-lr;
+//         span {
+//             line-height: 0.1em;
+//         }
+//     }
+// }
 
 .credit {
     background-color: #a00404;
